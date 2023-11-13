@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Instalacion de fuente principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <!-- Instalación de fuente secundaria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="./css/stylepp.css" as="style">
+    <link href="./css/stylepp.css" rel="stylesheet">
+
+
+    <link rel="preload" href="./css/normalizepp.css" as="style">
+    <link href="./css/normalizepp.css" rel="stylesheet">
+
+
+
+
+
+    <title>Kokoro Latino</title>
+</head>
+
+
+<body>
+    <!-- Aqui tenemos la flecha que tiene un ancla al navegador -->
+    
+
+    <!-- <section>
+        <h1>HENLOOO</h1> ESTO HAY QUE ELIMINARLO CUANDO TERMINEMOS CON LAS PRUEBAS!!!!
+    </section> -->
+
+    <!-- NAVEGADOR + LOGO + HEADER -->
+    <!-- Aquí vamos a meter un navegador que nos va a acompañar según scrolleamos hacía abajo, y a la vez va a ser el encabezado de la pagina web, con el logo(que vamos a crear en canva) -->
+
+    <header> <!--Le hemos puesto un id al header para utilizarlo como ancla-->
+        <div class="navegador">
+            <button class="abrirMenu">abrir</button>
+            <!-- CARTA (QUE DIRIJA A OTRA PAGINA) -->
+            <div class="carta">
+                <a href="http://127.0.0.1:5500/ProyectoPersonal/apartadoCarta/carta.html">Carta</a>
+                <a href="#contacto">Contacto</a>
+                <!--ANCLA PARA SCROLLEAR HACIA ABAJO ¡¡AÑADIR TRANSICIÓN SMOOTH!!-->
+                <!-- HORARIOS Y LOCALIZACIONES (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA AL FOOTER) -->
+            </div>
+            <div>
+                <!-- LOGO (QUE NOS RECARGUE LA PAGINA)¿PODEMOS HACER QUE SOBRESALGA UN POCO DEL HEADER PARA QUE SE VEA MEJOR? -->
+                <a class="logonav" href="#"><img src="./img/logo-removebg-preview.png" alt="logo_kokoro_latino"></a>
+            </div>
+            <!--ANCLA PARA SCROLLEAR HACIA ABAJO -->
+            <!-- CONTACTO (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA) -->
+
+            <div class="horario">
+                <a href="#horarioAncla">Horario</a>
+                <a href="#localizaciones">Localizaciones</a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div id="scrolltotop">
+        <a href="#" id="scrolltotoplink">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-up-filled" width="35"
+                height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M10.586 3l-6.586 6.586a2 2 0 0 0 -.434 2.18l.068 .145a2 2 0 0 0 1.78 1.089h2.586v7a2 2 0 0 0 2 2h4l.15 -.005a2 2 0 0 0 1.85 -1.995l-.001 -7h2.587a2 2 0 0 0 1.414 -3.414l-6.586 -6.586a2 2 0 0 0 -2.828 0z"
+                    stroke-width="0" fill="currentColor"></path>
+            </svg>
+        </a>
+    </div>
+        <!-- EL NAVEGADOR SE TIENE QUE FUSIONAR CON EL CARROUSEL Y CUANDO SCROLLEAS HACÍA ABAJO YA SE DESPEGA -->
+        <!-- Galería de imágenes CARRUSEL DE IMAGENES DE FONDO -->
+        <div class="contenedorSlider">
+
+            <div id="anterior">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 6l-6 6l6 6"></path>
+                </svg>
+
+            </div>
+
+            <div class="sliderScreen">
+                <img id="imagen" src="" alt="Imagen" />
+            </div>
+
+            <div id="siguiente">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+
+            </div>
+
+        </div>
+
+
+        <section>
+
+            <!-- BREVE TEXTO MISION Y VISION DEL RESTAURANTE, NUESTRO COMPROMISO EJ ECOLOGICO, CARTA VEGANA,  -->
+            <div class="compromisoTodo">
+                <div class="compromisoTitulo">
+                    <h2>Nuestro compromiso</h2>
+                </div>
+                <div class="compromisoMensaje">
+                    <h3>En este restaurante nos dedicamos a
+                        <br>
+                        promover la sostenibilidad
+                        <br>
+                        y el respeto por el medio ambiente
+                        <br>
+                        a través de la elección de
+                        <br>
+                        ingredientes locales
+                        <br>
+                        y la creación de platos veganos.
+                        <br>
+                        La gestión de los residuos,
+                        <br>
+                        el uso de energías limpias
+                        <br>
+                        y la concienciación de los clientes
+                        <br>
+                        sobre sus elecciones alimenticias
+                        <br>
+                        son parte integral de esta visión.
+                        <br>
+                        En este restaurante cada bocado
+                        <br>
+                        es una contribución a un mundo mejor.
+                    </h3>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Icono flotante (icono telefon) con el formulario de reservas, crear un pop con JavaScript-->
+
+    <!-- Flecha que este situada en la parte inferior y que te scrollee atutomaticamente hacia arriba al darle click  -->
+
+    <!-- CARTA (BREVE RESUMEN O MENU DEL DIA DE LA CARTA QUE DIRIJA DIRECTAMENTE A LA CARTA) -->
+
+    <section class="contenedor"> <!--Los botones aparecen al scrollear hacía abajo-->
+        <div class="contenedorCarta">
+            <div class="cartapdf">
+                <!-- <a href="">Menu del dia</a> -->
+                <a href="#">Carta en pdf</a>
+                <a href="#">Carta de bebidas</a>
+                <a href="#">Carta de alergénos</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- EVENTOS Y SHOWS (OPCIONAL) -->
+
+    <section>
+
+    </section>
+
+
+    <!-- RESEÑAS -->
+
+    <section class="contenedor">
+        <div class="carousel">
+            <button id="prevButton"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-arrow-big-left" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z">
+                    </path>
+                </svg>
+            </button>
+            <div class="carousel-container">
+                <h2>Opiniones y Reseñas</h2>
+                <div class="review">
+                    <div class="resenas">
+                        <h2 class="imgresena1"></h2>
+                        <h3>En Kokoro Latino se combinan con maestría los sabores asiáticos y
+                            latinoamericanos. Cada
+                            plato es
+                            una obra maestra de la fusión gastronómica, ofreciendo una experiencia única y deliciosa.
+                            Desde su
+                            ambiente acogedor hasta su sorprendente menú, Kokoro Latino es una parada obligatoria para
+                            los
+                            amantes de la comida auténtica y creativa. ¡Prepárate para un viaje culinario inolvidable!
+                        </h3>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="resenas">
+                        <h2 class="imgresena2"></h2>
+                        <h3>Kokoro Latino es un verdadero rincón de maravillas gastronómicas. El ambiente acogedor y el
+                            servicio
+                            amable hacen que este restaurante sea perfecto para una noche memorable.</h3>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="resenas">
+                        <h2 class="imgresena3"></h2>
+                        <h3>En Kokoro Latino, desde los rolls de sushi con un toque latino hasta los platos de ceviche
+                            con
+                            un
+                            giro asiático, cada bocado es una deliciosa sorpresa. La decoración moderna y el servicio
+                            atento
+                            completan la experiencia. Si estás en busca de una aventura culinaria que despierte tus
+                            sentidos,
+                            Kokoro Latino es el lugar ideal para satisfacer tu apetito por la creatividad culinaria.
+                        </h3>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="resenas">
+                        <h2 class="imgresena4"></h2>
+                        <h3>Kokoro Latino es un verdadero oasis de sabores que te sumerge en un mundo culinario donde
+                            Asia y
+                            Latinoamérica se abrazan. Cada plato es una obra maestra de la fusión, presentando
+                            combinaciones
+                            de
+                            ingredientes que te sorprenderán gratamente. La decoración elegante y el ambiente acogedor
+                            hacen
+                            que
+                            este lugar sea perfecto para cualquier ocasión, desde cenas románticas hasta reuniones
+                            familiares</h3>
+                    </div>
+                </div>
+            </div>
+            <button id="nextButton"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-arrow-big-right" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section class="contenedorHorario">
+
+        <div class="contenedor">
+            <H2 id="horarioAncla">Horarios</H2>
+            <div class="diasHoras">
+                <div>
+                    <H3>Lunes-Jueves </H3>
+                    <h2>13:00-16:30</h2>
+                    <h2>20:00-23:00</h2>
+                </div>
+                <div>
+                    <h3>Viernes, Sábados y Domingos</h3>
+                    <div class="horaFestivo">
+                        <h2>13:00-16:30</h2>
+                        <h2>19:00-00:30</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="contenedor">
+            <!-- Localizaciones -->
+            <div class="iconoLocalizacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-filled" width="40"
+                    height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                        stroke-width="0" fill="currentColor"></path>
+                </svg>
+                <h2 id="localizaciones">Localizaciones</h2>
+
+            </div>
+            <div class="calles">
+                <h3 class="chamberi">Calle de la Olivar, 4 (Chamberí)</h3>
+                <h3 class="lavapies">Calle de la Moratines, 58 (Lavapies)</h3>
+                <h3 class="malasaña">Calle de la Palma, 13 (Malasaña)</h3>
+            </div>
+
+        </div>
+
+        <!-- Contacto y RRSS -->
+        <!-- <div class="rrssContacto"> -->
+        <div class="rrss">
+            <div class="contenedor">
+                <div class="contenedorRRSS">
+
+                    <h2 id="contacto">Contacto</h2>
+                    <a class="tlf1" href="#">911234567 (Chamberí)</a>
+                    <a class="tlf2" href="#">911206439 (Lavapies)</a>
+                    <a class="tlf3" href="#">915319274 (Malasaña)</a>
+                    <a class="email">info.kokorolatino@gmail.com</a>
+                    <h3>¡Síguenos!</h3>
+
+                    <div class="iconos">
+
+                        <!-- ICONO DE INSTAGRAM -->
+
+                        <a href="#"><!--Aquí deberia ir el link a la pagina de instagram, pero no tenemos-->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                                width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z">
+                                </path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M16.5 7.5l0 .01"></path>
+                            </svg>
+
+                        </a>
+
+                        <!-- ICONO FACEBOOK -->
+                        <a href="#"><!--Aquí deberia ir el link a la pagina de facebook, pero no tenemos-->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                                width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3">
+                                </path>
+                            </svg>
+                        </a>
+                        <!-- ICONO TWITTER -->
+                        <a href="#"><!--Aquí deberia ir el link a la pagina de twitter, pero no tenemos-->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                                width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                                </path>
+                            </svg>
+                        </a>
+                        <!-- ICONO TIKTOK -->
+                        <a href="#" id="tiktok"> <!--Aquí deberia ir el link a la pagina de tiktok, pero no tenemos-->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
+                                width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z">
+                                </path>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <!-- ICONO DEL TLF DONDE POPEA EL FORMULARIO -->
+    <div>
+        <div id="toform">
+            <a href="#" class="popupform" id="show-popup-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="50"
+                    height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                    <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                    </path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- FORMULARIO + LA X PARA CERRAR EL FORMULARIO -->
+
+        <div id="popup-container" class="popup">
+            <div class="popup-content">
+                <span class="close-popup" id="close-popup">&times;</span>
+                <form class="form">
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                        <div class="formNombre">
+                            <label>Nombre y Apellidos *</label>
+                            <input id="Nombre" type="text" placeholder="Escribe aquí tu nombre y apellidos" required>
+                        </div>
+                        <br>
+                        <label>Telefono *</label>
+                        <input id="Tlf" type="tlf" placeholder="Escribe aquí tu telefono" required>
+                        <br>
+                        <label>Correo </label>
+                        <input id="Email" type="email" placeholder="Escribe aquí tu correo">
+                        <br>
+                        <label>Comentarios</label>
+                        <input id="Comentario" type="comentario" placeholder="Escribe aquí tu comentario">
+                        <br>
+                        <input type="submit" value="Enviar">
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./jspp.js"></script>
+</body>
+
+</html>
